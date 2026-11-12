@@ -1,0 +1,20 @@
+{
+  "name": "cloudflare-website-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A professional static website template that deploys to Cloudflare Workers for free.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build:js": "esbuild src/motion.js --bundle --minify --format=esm --target=es2020 --legal-comments=eof --outfile=public/js/motion.js"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/fraunces": "5.3.0",
+    "esbuild": "0.28.2",
+    "gsap": "3.15.0",
+    "wrangler": "4.155.0"
+  }
+}

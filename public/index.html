@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember Lane Coffee | Small-batch coffee, roasted every Tuesday</title>
+  <meta name="description" content="Ember Lane is a small-batch coffee roastery. We roast every Tuesday and ship by Friday, so your beans arrive at their best.">
+  <meta name="theme-color" content="#f4ede3">
+  <meta property="og:title" content="Ember Lane Coffee">
+  <meta property="og:description" content="Small-batch coffee, roasted every Tuesday and in your cup by Friday.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/bag-hero.webp">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/images/bag-hero.webp" as="image">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <p class="announcement">Roasted every Tuesday. <strong>Free shipping over 40 EUR.</strong></p>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <nav class="nav-group nav-left" aria-label="Shop">
+        <a href="#coffees">Coffees</a>
+        <a href="#subscriptions">Subscriptions</a>
+        <a href="#process">How we roast</a>
+      </nav>
+
+      <a class="brand" href="/" aria-label="Ember Lane Coffee, home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M20 9c-5 4.5-7 8.5-7 12.5a7 7 0 0 0 14 0c0-4-2-8-7-12.5Z" fill="#c8553d"/>
+          <path d="M20 15c-1.6 2.6-2.2 4.6-2.2 7s.8 4 2.2 5" stroke="#f4ede3" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span>Ember Lane</span>
+      </a>
+
+      <nav class="nav-group nav-right" aria-label="Company">
+        <a href="#faq">FAQ</a>
+        <a href="#visit">Visit us</a>
+        <a class="button button-small" href="#subscriptions">Start a subscription</a>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
+        <span class="sr-only">Open menu</span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Main" data-nav>
+      <a href="#coffees">Coffees</a>
+      <a href="#subscriptions">Subscriptions</a>
+      <a href="#process">How we roast</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" data-hero>
+      <img class="hero-beans hero-beans-left" src="/images/beans-left.webp" alt="" width="720" height="1080" data-depth="0.6">
+      <img class="hero-beans hero-beans-right" src="/images/beans-right.webp" alt="" width="720" height="1080" data-depth="1">
+
+      <div class="container hero-copy">
+        <p class="eyebrow">Roasted every Tuesday</p>
+        <h1>Coffee worth<br><em>waking up for</em></h1>
+        <p class="lead">Small-batch, single-origin coffee, roasted once a week and at your door by Friday. Days old, never months.</p>
+        <div class="hero-actions">
+          <a class="button" href="#subscriptions">Start a subscription</a>
+          <a class="button button-ghost" href="#coffees">Explore the coffees</a>
+        </div>
+      </div>
+
+      <div class="hero-stage">
+        <aside class="callout callout-left" data-depth="0.25">
+          <span class="callout-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3c-4 3.6-5.6 6.8-5.6 10a5.6 5.6 0 0 0 11.2 0c0-3.2-1.6-6.4-5.6-10Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <h2>Roasted to order</h2>
+          <p>12 kg batches every Tuesday, with a profile tuned for each origin.</p>
+        </aside>
+
+        <div class="bag-wrap" data-bag>
+          <img class="hero-bag" src="/images/bag-hero.webp" alt="An Ember Lane coffee bag in matte espresso brown with a gold tin-tie" width="900" height="1350">
+          <span class="bag-shadow" aria-hidden="true"></span>
+        </div>
+
+        <aside class="callout callout-right" data-depth="0.25">
+          <span class="callout-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h2>Rested 48 hours</h2>
+          <p>The beans rest before shipping, so the flavour has settled when you open the bag.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Highlights">
+      <div class="strip-track">
+        <p>Direct trade with three farms</p>
+        <p>Compostable bags</p>
+        <p>Roast date on every bag</p>
+        <p>Pause or cancel anytime</p>
+      </div>
+    </section>
+
+    <section class="section" id="coffees">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">This season</p>
+          <h2>Three origins, one for every morning</h2>
+          <p>Each coffee is roasted to bring out what its farm does best. Whole bean, or ground to order for your brewer.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="coffee-card coffee-card-honey reveal" data-tilt>
+            <div class="coffee-art">
+              <img src="/images/bag-ethiopia.webp" alt="Sunrise Ethiopia bag in honey yellow" width="640" height="640" loading="lazy">
+            </div>
+            <div class="coffee-body">
+              <p class="tag">Light roast</p>
+              <h3>Sunrise Ethiopia</h3>
+              <p>Floral and bright: jasmine, peach and black tea.</p>
+              <div class="coffee-meta"><span>250 g</span><strong>14 EUR</strong></div>
+            </div>
+          </article>
+
+          <article class="coffee-card coffee-card-ember reveal" data-tilt>
+            <div class="coffee-art">
+              <img src="/images/bag-colombia.webp" alt="Harvest Colombia bag in terracotta" width="640" height="640" loading="lazy">
+            </div>
+            <div class="coffee-body">
+              <p class="tag">Medium roast</p>
+              <h3>Harvest Colombia</h3>
+              <p>Balanced and sweet: caramel, red apple, a clean finish.</p>
+              <div class="coffee-meta"><span>250 g</span><strong>13 EUR</strong></div>
+            </div>
+          </article>
+
+          <article class="coffee-card coffee-card-dark reveal" data-tilt>
+            <div class="coffee-art">
+              <img src="/images/bag-brazil.webp" alt="Night Shift Brazil bag in near black" width="640" height="640" loading="lazy">
+            </div>
+            <div class="coffee-body">
+              <p class="tag">Dark roast</p>
+              <h3>Night Shift Brazil</h3>
+              <p>Rich and round: dark chocolate, hazelnut, low acidity.</p>
+              <div class="coffee-meta"><span>250 g</span><strong>12 EUR</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="process-media" data-parallax-media>
+        <img src="/images/roastery.webp" alt="Freshly roasted beans pouring from a vintage drum roaster into the cooling tray" width="1600" height="1067" loading="lazy">
+      </div>
+      <div class="container process-inner">
+        <div class="section-head reveal">
+          <p class="eyebrow">How we roast</p>
+          <h2>From the farm to your door in four steps</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-number">01</span>
+            <h3>Source</h3>
+            <p>Green coffee bought directly from three farms we visit, above market price.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-number">02</span>
+            <h3>Roast</h3>
+            <p>Every Tuesday, in 12 kg batches, with a profile tuned for each origin.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-number">03</span>
+            <h3>Rest</h3>
+            <p>48 hours of rest, so the gas escapes and the flavour settles.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-number">04</span>
+            <h3>Ship</h3>
+            <p>Compostable bags with the roast date printed on the front.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="ritual" id="brew" aria-labelledby="brew-title" data-ritual>
+      <div class="container ritual-inner">
+        <div class="ritual-copy">
+          <p class="eyebrow">Brew it at home</p>
+          <h2 id="brew-title">Four minutes with a Chemex</h2>
+          <ol class="ritual-steps">
+            <li class="ritual-step" data-ritual-step>
+              <span class="ritual-number">01</span>
+              <div>
+                <h3>Grind</h3>
+                <p>30 g of coffee, medium-coarse, about the size of sea salt.</p>
+              </div>
+            </li>
+            <li class="ritual-step" data-ritual-step>
+              <span class="ritual-number">02</span>
+              <div>
+                <h3>Let it bloom</h3>
+                <p>Wet the grounds with 60 g of water just off the boil and wait 30 seconds.</p>
+              </div>
+            </li>
+            <li class="ritual-step" data-ritual-step>
+              <span class="ritual-number">03</span>
+              <div>
+                <h3>Pour slowly</h3>
+                <p>Small circles up to 500 g of water, then let it drain.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="ritual-media">
+          <img class="ritual-still" src="/images/chemex-brew.webp" alt="A Chemex brewer with hot water pouring over freshly bloomed coffee grounds" width="540" height="960" loading="lazy">
+          <video class="ritual-video" muted playsinline preload="none" width="540" height="960" aria-hidden="true" data-ritual-video></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="subscriptions">
+      <div class="container">
+        <div class="section-head section-head-center reveal">
+          <p class="eyebrow">Subscriptions</p>
+          <h2>Fresh coffee on repeat</h2>
+          <p>Choose how much you drink. Change, pause or cancel whenever you want.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="plan reveal">
+            <h3>Solo</h3>
+            <p class="plan-price"><strong>12</strong> EUR / month</p>
+            <ul>
+              <li>1 bag (250 g) a month</li>
+              <li>Rotating single origin</li>
+              <li>Brewing guide card</li>
+            </ul>
+            <a class="button button-ghost" href="mailto:hello@example.com?subject=Solo%20subscription">Choose Solo</a>
+          </article>
+
+          <article class="plan plan-featured reveal">
+            <p class="plan-badge">Most popular</p>
+            <h3>Duo</h3>
+            <p class="plan-price"><strong>22</strong> EUR / month</p>
+            <ul>
+              <li>2 bags (500 g) a month</li>
+              <li>Pick your origins</li>
+              <li>Free shipping</li>
+            </ul>
+            <a class="button button-light" href="mailto:hello@example.com?subject=Duo%20subscription">Choose Duo</a>
+          </article>
+
+          <article class="plan reveal">
+            <h3>Office</h3>
+            <p class="plan-price"><strong>60</strong> EUR / month</p>
+            <ul>
+              <li>2 kg a month</li>
+              <li>Ground for your machine</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="button button-ghost" href="mailto:hello@example.com?subject=Office%20subscription">Choose Office</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2>What people say after the first bag</h2>
+        </div>
+
+        <!-- Sample testimonials for the template. Replace them with real ones before going live. -->
+        <div class="quote-grid">
+          <figure class="quote reveal">
+            <blockquote>"I didn't know coffee could taste like peach. Now I check the roast date on every bag I buy."</blockquote>
+            <figcaption><span class="avatar">AM</span>Ana M., sample customer</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>"Our office switched to the Office plan and nobody brings coffee from home anymore."</blockquote>
+            <figcaption><span class="avatar">JR</span>João R., sample customer</figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>"Pausing the subscription while I travelled took ten seconds. That's why I stayed."</blockquote>
+            <figcaption><span class="avatar">LK</span>Lena K., sample customer</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Good to know</h2>
+          <p>Anything else? Write to us and a real person answers within a day.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>When will my coffee arrive?</summary>
+            <p>We roast on Tuesday and ship on Wednesday. Most orders arrive by Friday.</p>
+          </details>
+          <details class="reveal">
+            <summary>Whole bean or ground?</summary>
+            <p>Whole bean keeps its flavour longer. If you don't have a grinder, we grind it for your brewing method.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I pause my subscription?</summary>
+            <p>Yes. Pause, skip a month or cancel anytime, with no fee.</p>
+          </details>
+          <details class="reveal">
+            <summary>Are the bags recyclable?</summary>
+            <p>They are home-compostable, including the valve and the label.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="visit">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <p class="eyebrow">Visit us</p>
+            <h2>Come smell the roaster on a Tuesday</h2>
+            <p>12 Ember Lane, Old Town. Tasting bar open Tuesday to Saturday, 8 am to 4 pm.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-light" href="mailto:hello@example.com">Write to us</a>
+            <a class="button button-ghost-light" href="#coffees">Browse coffees</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Ember Lane Coffee</strong> is a fictional brand and its product photos are AI-generated. This site is an open-source template you can copy and make your own.</p>
+      <p>&copy; <span data-year>2026</span> Ember Lane. Hosted for free on Cloudflare.</p>
+    </div>
+  </footer>
+</body>
+</html>
