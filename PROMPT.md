@@ -78,7 +78,7 @@ Pick these three effects and implement exactly this behaviour:
   degrees) and, while the hero scrolls away, rises 90 px and rotates 4 degrees; the bean
   piles drift outward at different speeds (scroll scrubbing).
 - Product cards tilt toward the pointer with CSS perspective, at most 8 degrees.
-- Optional, cinematic: a "brew it at home" section pinned for 2.5 screen heights,
+- Optional: a "brew it at home" section pinned for 2.5 screen heights,
   with ./public/video/[chemex-brew.mp4] next to 3 steps in HTML. The scroll progress
   sets the video's currentTime (scrolling back rewinds it) and highlights the
   current step. Fetch the clip as a blob only when the section is near, show
