@@ -105,8 +105,9 @@ JavaScript, or with reduced motion, the page must be complete and static.
 
 ## Cloudflare deployment files
 - wrangler.jsonc with a "name" in lowercase letters and dashes, a "compatibility_date",
-  and "assets": { "directory": "./public", "not_found_handling": "404-page" }.
-  No "main" script: this is a static site.
+  "assets": { "directory": "./public", "not_found_handling": "404-page" } and an empty
+  "previews": {} block (pull request previews need it). No "main" script: this is a
+  static site.
 - package.json with exact versions as devDependencies (wrangler, esbuild, gsap) and the
   scripts "dev": "wrangler dev", "deploy": "wrangler deploy" and "build:js" for the
   esbuild bundle.

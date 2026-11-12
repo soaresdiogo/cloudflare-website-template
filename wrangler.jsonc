@@ -7,5 +7,7 @@
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
-  }
+  },
+  // Pull request previews need this block; empty is enough for a static site
+  "previews": {}
 }
