@@ -201,7 +201,17 @@ a {
   color: var(--espresso);
 }
 
-/* Announcement and header */
+/* Demo notice, announcement and header */
+.demo-notice {
+  margin: 0;
+  padding: 6px 16px;
+  background: var(--espresso);
+  color: var(--cream);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
 .announcement {
   margin: 0;
   padding: 10px 16px;
